@@ -6,7 +6,6 @@
 }
 
 .navbar-logosection {
-    width: 100%;
     height: auto;
     padding: 20px 50px;
 }
@@ -38,7 +37,6 @@
 }
 
 .navbar .navbar-nav {
-    width: 100%;
     padding: 50px 0 0 0;
 }
 
