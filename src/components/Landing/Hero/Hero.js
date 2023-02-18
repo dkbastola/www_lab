@@ -10,9 +10,12 @@ export default function Hero() {
     // <div className="hero">
     <Carousel
       autoPlay
+      infiniteLoop
       showThumbs={false}
       showIndicators={false}
       showStatus={false}
+      interval={6000}
+      transitionTime={1000}
     >
       {data.map(({ id, url, title, desc }) => {
         return (
