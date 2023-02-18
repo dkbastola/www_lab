@@ -1,0 +1,63 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    border-bottom: 10px solid rgb(198, 13, 13);
+}
+
+.navbar-logosection {
+    width: 100%;
+    height: auto;
+    padding: 20px 50px;
+}
+
+.navbar-logosection .navbar-brand {
+    display: flex;
+}
+
+.navbar-logosection .navbar-brand div{
+    margin: 0 20px;
+}
+
+.navbar-logosection .navbar-brand .navbar-lab-name {
+    color: white;
+    align-self: center;
+    border-left: 2px solid #fff;
+    padding: 0 20px;
+    font-size: 1.25em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar-logosection .navbar-brand a {
+    text-decoration: none;
+}
+
+.navbar-logosection img.navbar-logo-img {
+    width: 75px;
+}
+
+.navbar .navbar-nav {
+    width: 100%;
+    padding: 50px 0 0 0;
+}
+
+.navbar-nav .navbar-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 0;
+}
+
+.navbar-nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 40px;
+    background: #444;
+    margin: 0 1px;
+    transition: 0.2s all;
+}
+
+.navbar-nav ul li a:hover {
+    background: #555;
+}
