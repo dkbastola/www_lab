@@ -23,7 +23,7 @@ export default function About() {
         <div className="about-name-section">
           <h2>Kiran Bastola, Ph.D.</h2>
           <p>Professor</p>
-          <p>Distinguished Professor of Information Science and technology</p>
+          <p>Distinguished Professor of Information Science and Technology</p>
           <p>Doctoral Program Chair, Ph.D. BMI</p>
           <p>School of Interdisciplinary Informatics</p>
         </div>
