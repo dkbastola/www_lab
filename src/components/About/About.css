@@ -1,0 +1,70 @@
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 50px 300px;
+    background: #f2f2f2;
+    font-family: 'Roboto', san-serif;
+}
+
+.about .about-img-section, .about .about-bio-section {
+    margin: 50px;
+}
+
+.about-img {
+    width: 300px;
+    height: auto;
+    border-top: 5px solid rgb(198, 13, 13);
+
+}
+
+.about-bio-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-uno-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-top: 3px solid rgb(198, 13, 13);
+    border-bottom: 3px solid rgb(198, 13, 13);
+}
+
+.about-uno-section .about-uno-img {
+    width: 75px;
+    height: 70px;
+}
+
+.about-uno-section .about-uno-img, .about-uno-section .about-uno-dept {
+    margin: 0 10px;
+}
+
+.about-bio-section .about-name-section {
+    font-size: 0.95em;
+    padding: 20px;
+    border-bottom: 1px dashed rgba(0,0,0,0.5);
+    
+}
+
+.about-bio-section .about-name-section h2 {
+    margin: 5px 0;
+}
+
+.about-bio-section .about-biography-section {
+    font-size: 0.95;
+    padding: 10px 20px;
+}
+
+.about-bio-section .about-biography-section h3 {
+    margin: 5px 0;
+}
+
+.about-bio-section .about-biography-section p {
+    line-height: 1.2;
+}
+
+@media screen and (max-width: 1440px) {
+    .about {
+        padding: 100px 100px;
+    }
+}
