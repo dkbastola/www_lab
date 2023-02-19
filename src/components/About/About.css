@@ -6,6 +6,10 @@
     font-family: 'Roboto', san-serif;
 }
 
+.about p {
+    color: #333;
+}
+
 .about .about-img-section, .about .about-bio-section {
     margin: 50px;
 }
