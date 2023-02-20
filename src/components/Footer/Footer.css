@@ -1,0 +1,33 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background: black;
+}
+
+.footer .footer-nav-section .footer-nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+
+}
+
+.footer .footer-nav-section .footer-nav-list li a {
+    text-decoration: none;
+    color: #f2f2f2;
+    margin: 20px;
+}
+
+.footer .footer-nav-section .footer-nav-list li a:hover {
+    text-decoration: underline;
+
+}
+
+.footer-img-section {
+    display: grid;
+    place-items: center;
+}
+
+.footer-img-section img {
+    width: 50%;
+}
