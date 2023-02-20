@@ -9,13 +9,18 @@ export default function Footer() {
       <div className="footer-nav-section">
         <ul className="footer-nav-list">
           <li className="footer-nav-listitem">
-            <Link to="/research">Research</Link>
+            <Link style={{ borderLeft: "1px solid #f2f2f2" }} to="/research">
+              Research
+            </Link>
           </li>
           <li className="footer-nav-listitem">
             <Link to="/publication">Publication</Link>
           </li>
           <li className="footer-nav-listitem">
             <Link to="/teaching">Teaching</Link>
+          </li>
+          <li className="footer-nav-listitem">
+            <Link to="/lab-members">Members</Link>
           </li>
           <li className="footer-nav-listitem">
             <Link to="/contact-us">Contact Us</Link>

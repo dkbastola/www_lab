@@ -11,12 +11,13 @@ export default function Navbar() {
             <Link to="/">
               <img
                 className="navbar-logo-img"
-                src="/images/uno-icon-color.png"
+                // src="/images/uno-icon-color.png"
+                src="/img/header/logo.png"
                 alt="UNO logo"
               />
             </Link>
           </div>
-          <div className="navbar-lab-name">Dr. Bastola's Laboratory</div>
+          <div className="navbar-lab-name">Kiran Bastola</div>
         </div>
       </div>
       <div className="navbar-nav">
@@ -29,6 +30,9 @@ export default function Navbar() {
           </li>
           <li className="navbar-listitem">
             <Link to="/teaching">Teaching</Link>
+          </li>
+          <li className="navbar-listitem">
+            <Link to="/lab-members">Members</Link>
           </li>
           <li className="navbar-listitem">
             <Link to="/contact-us">Contact Us</Link>

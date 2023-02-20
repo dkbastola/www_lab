@@ -30,8 +30,8 @@
     display: flex;
     align-items: center;
     padding: 20px;
-    border-top: 3px solid rgb(198, 13, 13);
-    border-bottom: 3px solid rgb(198, 13, 13);
+    border-top: 2px solid rgb(198, 13, 13);
+    border-bottom: 2px solid rgb(198, 13, 13);
 }
 
 .about-uno-section .about-uno-img {
