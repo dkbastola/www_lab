@@ -9,10 +9,17 @@ export default function Publication() {
     <div className="publication">
       <div className="publication-header">
         <div className="publication-header-heading">
-          Welcome to My Publication Page!
+          <div className="publication-title">
+            <h1>My Publications</h1>
+            <p>
+              So you are interested in my publication? Check out the most recent
+              publications down below!
+            </p>
+          </div>
         </div>
       </div>
       <div className="publication-list-section">
+        <h3 className="publication-list-header">Recent Publication</h3>
         <ul className="publication-list">
           {publication.map(({ id, title, desc, link }) => {
             return (
