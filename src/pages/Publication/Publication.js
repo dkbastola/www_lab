@@ -1,3 +1,4 @@
+import { Paper } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -24,14 +25,16 @@ export default function Publication() {
           {publication.map(({ id, title, desc, link }) => {
             return (
               <li key={id} className="publication-listitem">
-                {link ? (
-                  <Link to={link}>
+                <Paper elevation={3} className="publication-paper">
+                  {link ? (
+                    <Link to={link}>
+                      <h3 className="publication-topic">{title}</h3>
+                    </Link>
+                  ) : (
                     <h3 className="publication-topic">{title}</h3>
-                  </Link>
-                ) : (
-                  <h3 className="publication-topic">{title}</h3>
-                )}
-                <p className="publication-desc">{desc}</p>
+                  )}
+                  <p className="publication-desc">{desc}</p>
+                </Paper>
               </li>
             );
           })}
