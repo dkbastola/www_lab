@@ -42,7 +42,7 @@
 }
 
 .research-list-section .research-list-desc {
-    padding: 0 120px;
+    padding: 0 200px;
 }
 
 .research-list {
@@ -53,6 +53,7 @@
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
+    margin: 10px 100px;
 }
 
 .research-listitem .research-paper {
