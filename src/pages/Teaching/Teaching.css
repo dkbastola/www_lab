@@ -5,7 +5,7 @@
 }
 
 .teaching-header-heading {
-    /* background-image: url('../../../public/images/teaching/teaching.jpg'); */
+    background-image: url('../../../public/img/index/slider/sample-img/Human_Chimp.jpg');
     height: 80vh;
     background-position: center;
     background-size: cover;
@@ -33,7 +33,7 @@
 }
 
 .teaching-list-section {
-    padding: 30px;
+    padding: 50px 10%;
 }
 
 .teaching-list-section .teaching-list-header {
@@ -41,8 +41,15 @@
     text-align: center;
 }
 
+.teaching-list-section .teaching-list-desc {
+    padding: 0 10%;
+}
+
 .teaching-list {
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 30px;
 }
 
 .teaching-listitem {
@@ -53,9 +60,10 @@
 
 .teaching-listitem .teaching-paper {
     padding: 20px;
-    margin: 20px 0;
-    width: 80%;
+    /* margin: 20px 0; */
+    /* width: 80%; */
     background-color: #dce6f3;
+    height: 220px;
 
 }
 

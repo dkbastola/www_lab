@@ -2,7 +2,7 @@ import { Paper } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 
-// import teaching from "../../data/teaching";
+import teaching from "../../data/teaching";
 import "./Teaching.css";
 
 export default function Teaching() {
@@ -11,43 +11,35 @@ export default function Teaching() {
       <div className="teaching-header">
         <div className="teaching-header-heading">
           <div className="teaching-title">
-            <h1>My teaching</h1>
-            <p>
-              So you are interested in my teaching? Check out the most recent
-              teaching down below!
-            </p>
+            <h1>My Teaching Journey</h1>
+            <p>Check out some of the courses I am teaching!</p>
           </div>
         </div>
       </div>
       <div className="teaching-list-section">
-        <h3 className="teaching-list-header">Recent teaching</h3>
+        <h3 className="teaching-list-header">Philosophy</h3>
         <div className="teaching-list-desc">
           <p>
-            The use of computing to manage, organize and analyze biological and
-            clinical data has become very important element of biology and
-            medical teaching. My current teaching in bioinformatics is rooted in
-            an interdisciplinary content both in style and context due to my
-            decade long professional career in a molecular biology laboratory. I
-            bring my wide variety of teaching experience in the life sciences
-            (plant, animal bacteria and virus molecular biology and
-            biochemistry) into the classroom and into my teaching work in
-            bioinformatics.
-          </p>
-          <p>
-            One of the broad goals of my teaching work in biomedical informatics
-            encompasses the study of information transmission and exchange in
-            living systems, with a particular interest in mitochondria.
-            Additionally, my collaborative translational teaching effort
-            includes the study of effective communication methods between health
-            service providers and patients with chronic diseases, such as
-            diabetes, COPD and hypertension (common among the elderly
-            population). We are currently evaluating the role of an information
-            technology solution (telehealth) in the delivery of remote health
-            services to further health care services to rural areas where
-            traditional medicine is largely inaccessible.
+            My teaching philosophy as well as my professional activity is built
+            upon the following interrelated principles: vision, collaboration,
+            active learning, critical thinking, feedback, and use of technology.
+            Learning by doing active learning is especially relevant in
+            bioinformatics, where the computational power of electronic media is
+            applied to the intensely visual and dynamic life sciences. I firmly
+            believe that, regardless of their chosen careers, students will
+            achieve excellence and relevance by cultivating critical thinking
+            skills. All the major changes in the course work that I have made
+            reflect these values and provide students with more
+            hands-on-exercises and challenge them with real life problems.
+            Through such problem-based learning experience I hope to prepare
+            them for the workplace. The Food Computer that I successfully built
+            this year is particularly a good vehicle to engage students in
+            bioinformatics research; for not only graduate students at UNO but
+            also local students in high schools.
           </p>
         </div>
-        {/* <ul className="teaching-list">
+        <h3 className="teaching-list-header">Courses</h3>
+        <ul className="teaching-list">
           {teaching.map(({ id, title, desc, link }) => {
             return (
               <li key={id} className="teaching-listitem">
@@ -64,7 +56,7 @@ export default function Teaching() {
               </li>
             );
           })}
-        </ul> */}
+        </ul>
       </div>
     </div>
   );
