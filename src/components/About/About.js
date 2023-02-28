@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import React from "react";
 
 import "./About.css";
@@ -16,8 +17,14 @@ export default function About() {
         <div className="about-uno-section">
           <img className="about-uno-img" src="/images/uno-icon-color.png" />
           <div className="about-uno-dept">
-            <h2>University of Nebraska - Omaha </h2>
-            <p>College of Information Science {"&"} Technology</p>
+            {/* <h2>University of Nebraska - Omaha </h2> */}
+            <Typography variant="h4" style={{ margin: "10px 0" }}>
+              University of Nebraska - Omaha
+            </Typography>
+            {/* <p>College of Information Science {"&"} Technology</p> */}
+            <Typography variant="body1" style={{ margin: "10px 0" }}>
+              College of Information Science {"&"} Technology
+            </Typography>
           </div>
         </div>
         <div className="about-name-section">
@@ -28,8 +35,14 @@ export default function About() {
           <p>School of Interdisciplinary Informatics</p>
         </div>
         <div className="about-biography-section">
-          <h3>Biography</h3>
-          <p>
+          {/* <h3>Biography</h3> */}
+          <Typography variant="h5" style={{ margin: "10px 0" }}>
+            Biography
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{ margin: "10px 0", lineHeight: "1.3" }}
+          >
             Dr. Bastola is a over 30-year veteran educator with diverse
             research, teaching and service experiences and expertise. He
             currently serves as the chair of doctoral program in Biomedical
@@ -40,8 +53,11 @@ export default function About() {
             in Bioinformatics at bachelors, masters and doctorate level and has
             supervised many graduate students (MS/Ph.D) research work in the
             Biomedical Informatics program seeing them to completion.{" "}
-          </p>
-          <p>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{ margin: "10px 0", lineHeight: "1.3" }}
+          >
             Currently his research focus has been on understanding the details
             of tumorigenesis (especially in colon cancer) and using information
             technology to improve colon health, health outcomes through early
@@ -53,7 +69,7 @@ export default function About() {
             {"&"} public health informatics and the regulation of gene
             expression in a variety of living systems. He continues to bring his
             research experience into the classroom.{" "}
-          </p>
+          </Typography>
         </div>
       </div>
     </div>
