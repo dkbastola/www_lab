@@ -1,4 +1,4 @@
-import { Paper } from "@mui/material";
+import { Paper, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -20,9 +20,11 @@ export default function Research() {
         </div>
       </div>
       <div className="research-list-section">
-        <h3 className="research-list-header">Recent Research</h3>
+        <Typography variant="h4" align="center" style={{ margin: "20px 0" }}>
+          Recent Research
+        </Typography>
         <div className="research-list-desc">
-          <p>
+          <Typography variant="body1">
             The use of computing to manage, organize and analyze biological and
             clinical data has become very important element of biology and
             medical research. My current research in bioinformatics is rooted in
@@ -32,8 +34,8 @@ export default function Research() {
             (plant, animal bacteria and virus molecular biology and
             biochemistry) into the classroom and into my research work in
             bioinformatics.
-          </p>
-          <p>
+          </Typography>
+          <Typography variant="body1" style={{ margin: "10px 0" }}>
             One of the broad goals of my research work in biomedical informatics
             encompasses the study of information transmission and exchange in
             living systems, with a particular interest in mitochondria.
@@ -45,7 +47,7 @@ export default function Research() {
             technology solution (telehealth) in the delivery of remote health
             services to further health care services to rural areas where
             traditional medicine is largely inaccessible.
-          </p>
+          </Typography>
         </div>
         <ul className="research-list">
           {research.map(({ id, title, desc, link }) => {
@@ -54,12 +56,12 @@ export default function Research() {
                 <Paper elevation={3} className="research-paper">
                   {link ? (
                     <Link to={link}>
-                      <h3 className="research-topic">{title}</h3>
+                      <Typography variant="h6">{title}</Typography>
                     </Link>
                   ) : (
-                    <h3 className="research-topic">{title}</h3>
+                    <Typography variant="h6">{title}</Typography>
                   )}
-                  <p className="research-desc">{desc}</p>
+                  <Typography variant="body1">{desc}</Typography>
                 </Paper>
               </li>
             );

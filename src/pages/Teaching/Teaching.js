@@ -1,4 +1,4 @@
-import { Paper } from "@mui/material";
+import { Paper, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -17,9 +17,11 @@ export default function Teaching() {
         </div>
       </div>
       <div className="teaching-list-section">
-        <h3 className="teaching-list-header">Philosophy</h3>
+        <Typography variant="h4" align="center" style={{ margin: "20px 0" }}>
+          Philosophy
+        </Typography>
         <div className="teaching-list-desc">
-          <p>
+          <Typography variant="body1">
             My teaching philosophy as well as my professional activity is built
             upon the following interrelated principles: vision, collaboration,
             active learning, critical thinking, feedback, and use of technology.
@@ -36,9 +38,11 @@ export default function Teaching() {
             this year is particularly a good vehicle to engage students in
             bioinformatics research; for not only graduate students at UNO but
             also local students in high schools.
-          </p>
+          </Typography>
         </div>
-        <h3 className="teaching-list-header">Courses</h3>
+        <Typography variant="h4" align="center" style={{ margin: "50px 0" }}>
+          Courses
+        </Typography>
         <ul className="teaching-list">
           {teaching.map(({ id, title, desc, link }) => {
             return (
@@ -46,12 +50,14 @@ export default function Teaching() {
                 <Paper elevation={3} className="teaching-paper">
                   {link ? (
                     <Link to={link}>
-                      <h3 className="teaching-topic">{title}</h3>
+                      <Typography variant="h6">{title}</Typography>
                     </Link>
                   ) : (
-                    <h3 className="teaching-topic">{title}</h3>
+                    <Link to={link}>
+                      <Typography variant="h6">{title}</Typography>
+                    </Link>
                   )}
-                  <p className="teaching-desc">{desc}</p>
+                  <Typography variant="body1">{desc}</Typography>
                 </Paper>
               </li>
             );
