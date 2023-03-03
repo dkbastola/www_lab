@@ -57,7 +57,7 @@ export default function Research() {
           </Typography>
         </div>
         <ul className="research-list">
-          {research.map(({ id, title, desc, link }) => {
+          {research.map(({ id, title, desc, link, citations }) => {
             return (
               <li key={id} className="research-listitem">
                 {/* <Paper elevation={3} className="research-paper">
@@ -76,35 +76,31 @@ export default function Research() {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                   >
-                    <Typography>Accordion 1</Typography>
+                    <Typography>{title}</Typography>
                   </AccordionSummary>
                   <Accordion>
                     <AccordionDetails>
-                      <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Suspendisse malesuada lacus ex, sit amet blandit leo
-                        lobortisFIODNASFNAIOFNAINFASINDLASNDLKFKLNDSFNLDKANFLKNALK
-                        FLKDNSFLNKDA
-                        eget.vdsfgsfefdaeflkFSDKJFBSKBFDKJBFKDJBFKAJSBFKASJBFDKJASBbjndNFSDKLBFDSLKJBFDSKJL
-                      </Typography>
-                      <Accordion>
-                        <AccordionSummary
-                          expandIcon={<ExpandMoreIcon />}
-                          aria-controls="panel1a-content"
-                          id="panel1a-header"
-                        >
-                          <Typography>Accordion 1</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          <Typography>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Suspendisse malesuada lacus ex, sit amet
-                            blandit leo
-                            lobortisFIODNASFNAIOFNAINFASINDLASNDLKFKLNDSFNLDKANFLKNALK
-                            FLKDNSFLNKDA
-                          </Typography>
-                        </AccordionDetails>
-                      </Accordion>
+                      <Typography>{desc}</Typography>
+                      {citations.map(({ desc }) => (
+                        <Accordion>
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1a-content"
+                            id="panel1a-header"
+                          >
+                            <Typography>{desc}</Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <Typography>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit. Suspendisse malesuada lacus ex, sit amet
+                              blandit leo
+                              lobortisFIODNASFNAIOFNAINFASINDLASNDLKFKLNDSFNLDKANFLKNALK
+                              FLKDNSFLNKDA
+                            </Typography>
+                          </AccordionDetails>
+                        </Accordion>
+                      ))}
                     </AccordionDetails>
                   </Accordion>
                 </Accordion>

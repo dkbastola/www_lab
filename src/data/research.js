@@ -56,16 +56,16 @@ const research = [
     link: "https://biocms.ist.unomaha.edu/",
     citations: [
       {
-        desc: "Chandrababu, S., & Bastola, D. (2019). An integrated approach to recognize potential protective effects of culinary herbs against chronic diseases. Journal of Healthcare Informatics Research, 3, 184-199. ",
+        cite: "Chandrababu, S., & Bastola, D. (2019). An integrated approach to recognize potential protective effects of culinary herbs against chronic diseases. Journal of Healthcare Informatics Research, 3, 184-199. ",
       },
       {
-        desc: "Karri, K., & Bastola, D. R. (2017). Efficacy of multiple anticancer therapies may depend on host immune response. Advances in Science, Technology and Engineering Systems, 2(3), 773-787. ",
+        cite: "Karri, K., & Bastola, D. R. (2017). Efficacy of multiple anticancer therapies may depend on host immune response. Advances in Science, Technology and Engineering Systems, 2(3), 773-787. ",
       },
       {
-        desc: "Sharma, S., Karri, K., Thapa, I., Bastola, D., & Ghersi, D. (2016). Identifying enriched drug fragments as possible candidates for metabolic engineering. BMC medical genomics, 9(2), 167-177 ",
+        cite: "Sharma, S., Karri, K., Thapa, I., Bastola, D., & Ghersi, D. (2016). Identifying enriched drug fragments as possible candidates for metabolic engineering. BMC medical genomics, 9(2), 167-177 ",
       },
       {
-        desc: "Banwait, J. K., Goettsch, K. A., & Bastola, D. R. (2016). Proteins localised to human mitochondria show structural element enrichment in their corresponding mRNA. International Journal of Computational Biology and Drug Design, 9(1-2), 120-134. ",
+        cite: "Banwait, J. K., Goettsch, K. A., & Bastola, D. R. (2016). Proteins localised to human mitochondria show structural element enrichment in their corresponding mRNA. International Journal of Computational Biology and Drug Design, 9(1-2), 120-134. ",
       },
     ],
   },
