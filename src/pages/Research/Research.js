@@ -1,6 +1,13 @@
-import { Paper, Typography } from "@mui/material";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Paper,
+  Typography,
+} from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import research from "../../data/research";
 import "./Research.css";
@@ -53,7 +60,7 @@ export default function Research() {
           {research.map(({ id, title, desc, link }) => {
             return (
               <li key={id} className="research-listitem">
-                <Paper elevation={3} className="research-paper">
+                {/* <Paper elevation={3} className="research-paper">
                   {link ? (
                     <Link to={link}>
                       <Typography variant="h6">{title}</Typography>
@@ -62,7 +69,45 @@ export default function Research() {
                     <Typography variant="h6">{title}</Typography>
                   )}
                   <Typography variant="body1">{desc}</Typography>
-                </Paper>
+                </Paper> */}
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                  >
+                    <Typography>Accordion 1</Typography>
+                  </AccordionSummary>
+                  <Accordion>
+                    <AccordionDetails>
+                      <Typography>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse malesuada lacus ex, sit amet blandit leo
+                        lobortisFIODNASFNAIOFNAINFASINDLASNDLKFKLNDSFNLDKANFLKNALK
+                        FLKDNSFLNKDA
+                        eget.vdsfgsfefdaeflkFSDKJFBSKBFDKJBFKDJBFKAJSBFKASJBFDKJASBbjndNFSDKLBFDSLKJBFDSKJL
+                      </Typography>
+                      <Accordion>
+                        <AccordionSummary
+                          expandIcon={<ExpandMoreIcon />}
+                          aria-controls="panel1a-content"
+                          id="panel1a-header"
+                        >
+                          <Typography>Accordion 1</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <Typography>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Suspendisse malesuada lacus ex, sit amet
+                            blandit leo
+                            lobortisFIODNASFNAIOFNAINFASINDLASNDLKFKLNDSFNLDKANFLKNALK
+                            FLKDNSFLNKDA
+                          </Typography>
+                        </AccordionDetails>
+                      </Accordion>
+                    </AccordionDetails>
+                  </Accordion>
+                </Accordion>
               </li>
             );
           })}
