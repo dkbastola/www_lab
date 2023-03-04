@@ -80,24 +80,20 @@ export default function Research() {
                   </AccordionSummary>
                   <Accordion>
                     <AccordionDetails>
-                      <Typography>{desc}</Typography>
-                      {citations.map(({ desc }) => (
-                        <Accordion>
+                      <Typography style={{ padding: "20px 0" }}>
+                        {desc}
+                      </Typography>
+                      {citations.map(({ cite, description }) => (
+                        <Accordion style={{ padding: "10px" }}>
                           <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"
                             id="panel1a-header"
                           >
-                            <Typography>{desc}</Typography>
+                            <Typography>{cite}</Typography>
                           </AccordionSummary>
                           <AccordionDetails>
-                            <Typography>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit. Suspendisse malesuada lacus ex, sit amet
-                              blandit leo
-                              lobortisFIODNASFNAIOFNAINFASINDLASNDLKFKLNDSFNLDKANFLKNALK
-                              FLKDNSFLNKDA
-                            </Typography>
+                            <Typography>{description}</Typography>
                           </AccordionDetails>
                         </Accordion>
                       ))}
