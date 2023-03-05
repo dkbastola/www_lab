@@ -14,7 +14,7 @@ export default function Hero() {
         showThumbs={false}
         showIndicators={false}
         showStatus={false}
-        interval={6000}
+        interval={10000}
         transitionTime={1000}
       >
         {data.map(({ id, url, title, desc }) => {

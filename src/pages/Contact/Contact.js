@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@material-ui/core";
 // import nodemailer from "nodemailer";
+import axios from "axios";
 
 import "./Contact.css";
 const useStyles = makeStyles((theme) => ({
@@ -41,8 +42,24 @@ function ContactPage() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (event) => {
+  const data = { name, email, subject, message };
+
+  console.log(data);
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
+    await axios({
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      url: "http://localhost:5001/send",
+      data: data,
+    }).then((response) => {
+      if (response.data.status === "success") {
+        alert("Message Sent.");
+      } else if (response.data.status === "fail") {
+        alert("Message failed to send.");
+      }
+    });
     // const transporter = nodemailer.createTransport({
     //   service: "gmail",
     //   auth: {

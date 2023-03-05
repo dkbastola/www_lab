@@ -60,16 +60,6 @@ export default function Research() {
           {research.map(({ id, title, desc, link, citations }) => {
             return (
               <li key={id} className="research-listitem">
-                {/* <Paper elevation={3} className="research-paper">
-                  {link ? (
-                    <Link to={link}>
-                      <Typography variant="h6">{title}</Typography>
-                    </Link>
-                  ) : (
-                    <Typography variant="h6">{title}</Typography>
-                  )}
-                  <Typography variant="body1">{desc}</Typography>
-                </Paper> */}
                 <Accordion>
                   <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
