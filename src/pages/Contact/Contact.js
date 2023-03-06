@@ -44,8 +44,6 @@ function ContactPage() {
 
   const data = { name, email, subject, message };
 
-  console.log(data);
-
   const handleSubmit = async (event) => {
     event.preventDefault();
     await axios({
@@ -60,30 +58,6 @@ function ContactPage() {
         alert("Message failed to send.");
       }
     });
-    // const transporter = nodemailer.createTransport({
-    //   service: "gmail",
-    //   auth: {
-    //     user: "YOUR_GMAIL_ADDRESS_HERE",
-    //     pass: "YOUR_GMAIL_PASSWORD_HERE",
-    //   },
-    // });
-    // const mailOptions = {
-    //   from: email,
-    //   to: "dkbastola@unomaha.edu",
-    //   subject: subject,
-    //   text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
-    // };
-    // transporter.sendMail(mailOptions, (error, info) => {
-    //   if (error) {
-    //     console.log(error);
-    //   } else {
-    //     console.log(`Email sent: ${info.response}`);
-    //   }
-    // });
-    // setName("");
-    // setEmail("");
-    // setSubject("");
-    // setMessage("");
   };
 
   return (

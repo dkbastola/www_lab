@@ -37,13 +37,11 @@ app.post("/send", (req, res, next) => {
   var subject = req.body.subject;
   var message = req.body.message;
 
-  console.log(req.body);
-
   var mail = {
     from: name,
     to: "phuclinh9802@gmail.com", // receiver email,
     subject: subject,
-    text: message,
+    text: "From: " + email + "\n" + message,
   };
 
   transporter.sendMail(mail, (err, data) => {

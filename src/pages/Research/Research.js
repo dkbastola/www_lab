@@ -66,7 +66,7 @@ export default function Research() {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                   >
-                    <Typography>{title}</Typography>
+                    <Typography variant="h6">{title}</Typography>
                   </AccordionSummary>
                   <Accordion>
                     <AccordionDetails>
