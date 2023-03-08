@@ -78,3 +78,11 @@
 .research-paper a:hover {
     text-decoration: underline;
 }
+
+.research-old-publication {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 200px;
+
+}

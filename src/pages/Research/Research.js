@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import research from "../../data/research";
+import publications from "../../data/publication";
 import "./Research.css";
 
 export default function Research() {
@@ -94,6 +95,26 @@ export default function Research() {
             );
           })}
         </ul>
+      </div>
+      <Typography variant="h4" align="center" style={{ margin: "20px 0" }}>
+        Old Publication
+      </Typography>
+      <div className="research-old-publication">
+        {publications.map(
+          (publication) =>
+            publication.link && (
+              <li
+                className="research-old-publication-item"
+                key={publication.title}
+              >
+                <Link to={publication.link}>
+                  <Typography variant="h6" style={{ color: "#111" }}>
+                    {publication.title}
+                  </Typography>
+                </Link>
+              </li>
+            )
+        )}
       </div>
     </div>
   );
