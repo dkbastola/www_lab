@@ -25,7 +25,7 @@ const img = [
   },
   {
     id: "2",
-    url: "/img/kiran/ResearchPicture/pic10.jpg",
+    url: "/images/greenhouse.jpeg",
     title: "Testing 2",
     desc: "Excepteur nisi id anim cillum do esse exercitation id proident. Velit ullamco aliquip labore magna sint laborum ea ipsum. Reprehenderit sint dolore consequat nulla aliquip officia exercitation consectetur incididunt dolor amet cillum adipisicing.",
   },
