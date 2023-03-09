@@ -84,7 +84,14 @@ export default function Research() {
                             <Typography>{cite}</Typography>
                           </AccordionSummary>
                           <AccordionDetails>
-                            <Typography>{description}</Typography>
+                            <Typography
+                              style={{
+                                fontStyle: "italic",
+                                fontSize: "0.95em",
+                              }}
+                            >
+                              {description}
+                            </Typography>
                           </AccordionDetails>
                         </Accordion>
                       ))}
