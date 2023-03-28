@@ -2,6 +2,8 @@
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
+// import { functions } from "firebase-functions";
+// import config from "../env.json";
 // import { initializeApp } from "firebase/compat/app";
 // import { getAnalytics } from "firebase/analytics";
 // import { getFiretore } from "firebase/compat/firestore";
@@ -10,14 +12,27 @@ import "firebase/compat/firestore";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+// if (Object.keys(functions.config()).length) {
+//   config = functions.config();
+// }
+// const firebaseConfig = {
+//   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+//   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+//   projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+//   storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+//   messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+//   appId: process.env.REACT_APP_FIREBASE_APP_ID,
+//   measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
+// };
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_FIREBASE_APP_ID,
-  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
+  apiKey: "AIzaSyDNhWJQgtwI1Qajy-bp5uJPEcJSuq2P87o",
+  authDomain: "react-cafi.firebaseapp.com",
+  projectId: "react-cafi",
+  storageBucket: "react-cafi.appspot.com",
+  messagingSenderId: "359816472353",
+  appId: "1:359816472353:web:e459bfa31c020cafd08060",
+  measurementId: "G-4D36G1B9F9",
 };
 
 // Initialize Firebase
