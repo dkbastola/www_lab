@@ -9,6 +9,8 @@ import {
 } from "@material-ui/core";
 // import nodemailer from "nodemailer";
 import axios from "axios";
+import { app, firestore } from "../../data/firebase";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
 
 import "./Contact.css";
 const useStyles = makeStyles((theme) => ({
@@ -46,18 +48,19 @@ function ContactPage() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    await axios({
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      url: "http://localhost:5001/send",
-      data: data,
-    }).then((response) => {
-      if (response.data.status === "success") {
-        alert("Message Sent.");
-      } else if (response.data.status === "fail") {
-        alert("Message failed to send.");
-      }
-    });
+    const db = getFirestore(app);
+    await addDoc(collection(db, "contacts"), {
+      name: name,
+      email: email,
+      subject: subject,
+      message: message,
+    })
+      .then(() => {
+        alert("Message has been submitted! Thank you.");
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
   };
 
   return (
