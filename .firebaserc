@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "react-cafi"
-  }
+    "default": "react-cafi",
+    "cafi": "react-cafi"
+  },
+  "targets": {},
+  "etags": {}
 }
