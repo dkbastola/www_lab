@@ -99,7 +99,7 @@ function ContactPage() {
           </Typography>
         </Grid>
         <Grid item xs={12} md={6} className={classes.formContainer}>
-          <form onSubmit={handleSubmit}>
+          <div onSubmit={handleSubmit}>
             <TextField
               fullWidth
               variant="outlined"
@@ -141,7 +141,7 @@ function ContactPage() {
             <Button type="submit" variant="contained" color="primary">
               Send
             </Button>
-          </form>
+          </div>
         </Grid>
       </Grid>
     </Container>
