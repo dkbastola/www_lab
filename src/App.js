@@ -8,6 +8,7 @@ import Publication from "./pages/Publication/Publication";
 import Teaching from "./pages/Teaching/Teaching";
 import Contact from "./pages/Contact/Contact";
 import Members from "./pages/Members/Members";
+import Cafi from "./pages/Cafi/Cafi";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/cafi" element={<Cafi />} />
         <Route path="/research" element={<Research />} />
         <Route path="/publication" element={<Publication />} />
         <Route path="/teaching" element={<Teaching />} />

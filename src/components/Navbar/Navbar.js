@@ -23,6 +23,9 @@ export default function Navbar() {
       <div className="navbar-nav">
         <ul className="navbar-list">
           <li className="navbar-listitem">
+            <Link to="/cafi">Cafi</Link>
+          </li>
+          <li className="navbar-listitem">
             <Link to="/research">Research</Link>
           </li>
           <li className="navbar-listitem">
