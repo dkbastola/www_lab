@@ -5,7 +5,7 @@
 }
 
 .cafi-header-heading {
-    background-image: url('../../../public/images/lab.jpg');
+    background-image: url('../../../public/images/landingimg.jpg');
     height: 80vh;
     background-position: center;
     background-size: cover;
@@ -86,3 +86,11 @@
     padding: 50px 200px;
 
 }
+
+.cafi-swiper-blog {
+    padding: 20px;
+    /* padding-left: 100px; */
+}
+/* .swiper-button-prev, .swiper-button-next {
+    color: #f2f2f2;
+} */

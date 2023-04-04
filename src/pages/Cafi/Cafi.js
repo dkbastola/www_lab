@@ -1,25 +1,39 @@
 import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Paper,
+  Card,
+  CardActions,
+  CardContent,
+  Button,
+  CardMedia,
   Typography,
 } from "@mui/material";
+
 import React from "react";
 import { Link } from "react-router-dom";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-
+import "swiper/swiper-bundle.css";
 import research from "../../data/research";
-import publications from "../../data/publication";
+import cafi from "../../data/cafi";
 import "./Cafi.css";
+import SwiperCore, { Navigation, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+SwiperCore.use([Navigation, Pagination]);
 
 export default function Cafi() {
+  const params = {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  };
   return (
     <div className="cafi">
       <div className="cafi-header">
         <div className="cafi-header-heading">
           <div className="cafi-title">
-            <h1>My Research</h1>
+            <h1>CAFI Projects</h1>
             <p>
               So you are interested in my research? Check out the most recent
               research down below!
@@ -29,7 +43,7 @@ export default function Cafi() {
       </div>
       <div className="cafi-list-section">
         <Typography variant="h4" align="center" style={{ margin: "20px 0" }}>
-          Recent Research
+          What is CAFI?
         </Typography>
         <div className="cafi-list-desc">
           <Typography variant="body1">
@@ -64,21 +78,58 @@ export default function Cafi() {
         </ul>
       </div>
       <Typography variant="h4" align="center" style={{ margin: "20px 0" }}>
-        Old Publication
+        Blogs
       </Typography>
-      <div className="cafi-old-publication">
-        {publications.map(
-          (publication) =>
-            publication.link && (
-              <li className="cafi-old-publication-item" key={publication.title}>
-                <Link to={publication.link}>
-                  <Typography variant="h6" style={{ color: "#111" }}>
-                    {publication.title}
-                  </Typography>
-                </Link>
-              </li>
-            )
-        )}
+      <div className="cafi-swiper-blog">
+        <Swiper
+          pagination
+          spaceBetween={0}
+          slidesPerView={3}
+          breakpoints={{
+            1600: {
+              slidesPerView: 3,
+            },
+            1440: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 1,
+            },
+          }}
+        >
+          {cafi.map((img) => {
+            return (
+              <SwiperSlide key={img.url}>
+                <Card
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    flexDirection: "column",
+                  }}
+                  sx={{ maxWidth: 500, height: 520 }}
+                >
+                  <CardMedia
+                    sx={{ height: 200 }}
+                    image={img.url}
+                    title={img.url}
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      {img.title}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {img.desc}
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small">Share</Button>
+                    <Button size="small">Learn More</Button>
+                  </CardActions>
+                </Card>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
     </div>
   );
