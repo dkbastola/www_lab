@@ -32,8 +32,19 @@
     line-height: 1.15;
 }
 
+.cafi-image {
+    display: grid;
+    place-items: center;
+    padding-bottom: 30px;
+}
+
+.cafi-image img {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
 .cafi-list-section {
     padding: 30px;
+    padding-bottom: 0;
 }
 
 .cafi-list-section .cafi-list-header {
@@ -42,7 +53,12 @@
 }
 
 .cafi-list-section .cafi-list-desc {
-    padding: 0 200px;
+    padding: 20px 20%;
+    padding-top: 0;
+}
+
+.cafi-typo {
+    padding: 10px 0;
 }
 
 .cafi-list {
@@ -94,3 +110,11 @@
 /* .swiper-button-prev, .swiper-button-next {
     color: #f2f2f2;
 } */
+
+.cafi-link {
+    transition: 0.3s ease;
+}
+
+.cafi-link:hover {
+    filter: brightness(80%);
+}

@@ -9,10 +9,13 @@ export default function Footer() {
       <div className="footer-nav-section">
         <ul className="footer-nav-list">
           <li className="footer-nav-listitem">
-            <Link style={{ borderLeft: "1px solid #f2f2f2" }} to="/research">
-              Research
+            <Link style={{ borderLeft: "1px solid #f2f2f2" }} to="/cafi">
+              Cafi
             </Link>
           </li>
+          <li className="footer-nav-listitem">
+            <Link to="/research">Research</Link>
+          </li>{" "}
           <li className="footer-nav-listitem">
             <Link to="/publication">Publication</Link>
           </li>

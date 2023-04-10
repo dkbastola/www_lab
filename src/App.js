@@ -9,6 +9,7 @@ import Teaching from "./pages/Teaching/Teaching";
 import Contact from "./pages/Contact/Contact";
 import Members from "./pages/Members/Members";
 import Cafi from "./pages/Cafi/Cafi";
+import CafiDetails from "./pages/Cafi/CafiDetails/CafiDetails";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/cafi" element={<Cafi />} />
+        <Route path="/cafi/:id" element={<CafiDetails />} />
         <Route path="/research" element={<Research />} />
         <Route path="/publication" element={<Publication />} />
         <Route path="/teaching" element={<Teaching />} />

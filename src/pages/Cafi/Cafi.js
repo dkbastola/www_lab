@@ -14,10 +14,10 @@ import "swiper/swiper-bundle.css";
 import research from "../../data/research";
 import cafi from "../../data/cafi";
 import "./Cafi.css";
-import SwiperCore, { Navigation, Pagination } from "swiper";
+import SwiperCore, { Navigation, Pagination, Mousewheel } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination, Mousewheel]);
 
 export default function Cafi() {
   const params = {
@@ -35,8 +35,8 @@ export default function Cafi() {
           <div className="cafi-title">
             <h1>CAFI Projects</h1>
             <p>
-              So you are interested in my research? Check out the most recent
-              research down below!
+              Introducing CAFI: A Collaborative Solution to Tackle Food
+              Injustice
             </p>
           </div>
         </div>
@@ -46,42 +46,55 @@ export default function Cafi() {
           What is CAFI?
         </Typography>
         <div className="cafi-list-desc">
-          <Typography variant="body1">
-            The use of computing to manage, organize and analyze biological and
-            clinical data has become very important element of biology and
-            medical research. My current research in bioinformatics is rooted in
-            an interdisciplinary content both in style and context due to my
-            decade long professional career in a molecular biology laboratory. I
-            bring my wide variety of research experience in the life sciences
-            (plant, animal bacteria and virus molecular biology and
-            biochemistry) into the classroom and into my research work in
-            bioinformatics.
+          <Typography className="cafi-typo" variant="body1">
+            At the heart of our proposed initiative lies an ambitious vision: to
+            create an innovation hub that will revolutionize the way we think
+            about food justice. Our aim is to leverage the unique strengths of
+            our community partners and the diverse expertise of our
+            cross-disciplinary team to dismantle food apartheid and ensure that
+            access to high-quality, healthy food is no longer determined by zip
+            code. We believe that at the intersection of different disciplines
+            lies the key to solving one of the most pressing challenges of our
+            time: the equitable distribution of food resources.
           </Typography>
-          <Typography variant="body1" style={{ margin: "10px 0" }}>
-            One of the broad goals of my research work in biomedical informatics
-            encompasses the study of information transmission and exchange in
-            living systems, with a particular interest in mitochondria.
-            Additionally, my collaborative translational research effort
-            includes the study of effective communication methods between health
-            service providers and patients with chronic diseases, such as
-            diabetes, COPD and hypertension (common among the elderly
-            population). We are currently evaluating the role of an information
-            technology solution (telehealth) in the delivery of remote health
-            services to further health care services to rural areas where
-            traditional medicine is largely inaccessible.
+          <Typography className="cafi-typo" variant="body1">
+            With a focus on addressing inequities in access to healthy food, our
+            team is committed to designing and implementing innovative research
+            and educational efforts that tackle food injustice from a variety of
+            angles. By harnessing the power of engineering, life sciences,
+            social sciences, public health, business, and education, we aim to
+            build solutions that will have both local and global impact.
+          </Typography>
+          <Typography className="cafi-typo" variant="body1">
+            Our collaborative, multidisciplinary team will be composed of
+            faculty, staff, students, and community partners who are united in
+            their commitment to driving positive change in pursuit of food
+            equality. By leveraging the experience of our community partners and
+            the knowledge and expertise of our UNO community, we will create a
+            catalyst for change that has the potential to transform our food
+            system.
+          </Typography>
+          <Typography className="cafi-typo" variant="body1">
+            Join us in our mission to break down the barriers that currently
+            exist in our food system and create a more equitable future for all.
           </Typography>
         </div>
-        <ul className="cafi-list">
+        {/* <ul className="cafi-list">
           {research.map(({ id, title, desc, link, citations }) => {
             return <li key={id} className="cafi-listitem"></li>;
           })}
-        </ul>
+        </ul> */}
+      </div>
+      <div className="cafi-image">
+        <img src="/images/CAFI.png" alt="cafi" width="600px" />
       </div>
       <Typography variant="h4" align="center" style={{ margin: "20px 0" }}>
         Blogs
       </Typography>
       <div className="cafi-swiper-blog">
         <Swiper
+          // mousewheel={true}
+          navigation={true}
           pagination
           spaceBetween={0}
           slidesPerView={3}
@@ -108,11 +121,13 @@ export default function Cafi() {
                   }}
                   sx={{ maxWidth: 500, height: 520 }}
                 >
-                  <CardMedia
-                    sx={{ height: 200 }}
-                    image={img.url}
-                    title={img.url}
-                  />
+                  <Link className="cafi-link" to={`/cafi/${img.id}`}>
+                    <CardMedia
+                      sx={{ height: 200 }}
+                      image={img.url}
+                      title={img.url}
+                    />
+                  </Link>
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
                       {img.title}
@@ -122,8 +137,9 @@ export default function Cafi() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small">Share</Button>
-                    <Button size="small">Learn More</Button>
+                    <Link to={`/cafi/${img.id}`}>
+                      <Button size="small">Learn More</Button>
+                    </Link>
                   </CardActions>
                 </Card>
               </SwiperSlide>
