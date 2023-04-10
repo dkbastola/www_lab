@@ -26,13 +26,13 @@ import "firebase/compat/firestore";
 //   measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 // };
 const firebaseConfig = {
-  apiKey: "AIzaSyDNhWJQgtwI1Qajy-bp5uJPEcJSuq2P87o",
-  authDomain: "react-cafi.firebaseapp.com",
-  projectId: "react-cafi",
-  storageBucket: "react-cafi.appspot.com",
-  messagingSenderId: "359816472353",
-  appId: "1:359816472353:web:e459bfa31c020cafd08060",
-  measurementId: "G-4D36G1B9F9",
+  apiKey: "AIzaSyDi0JtxfD_H3SgcprzyONxFxL6fJFxQ5eM",
+  authDomain: "cafi-8e4b0.firebaseapp.com",
+  projectId: "cafi-8e4b0",
+  storageBucket: "cafi-8e4b0.appspot.com",
+  messagingSenderId: "297397879340",
+  appId: "1:297397879340:web:56d201aa36b2c2a454c789",
+  measurementId: "G-NQSP90XC0D",
 };
 
 // Initialize Firebase
