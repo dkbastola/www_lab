@@ -81,3 +81,9 @@
 .teaching-paper a:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+    .teaching-header-heading .teaching-title {
+        padding: 20px 50px;
+    }
+}

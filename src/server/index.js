@@ -39,7 +39,7 @@ app.post("/send", (req, res, next) => {
 
   var mail = {
     from: name,
-    to: "phuclinh9802@gmail.com", // receiver email,
+    to: "clab.pki@gmail.com", // receiver email,
     subject: subject,
     text: "From: " + email + "\n" + message,
   };

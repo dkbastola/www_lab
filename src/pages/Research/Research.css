@@ -86,3 +86,9 @@
     padding: 50px 200px;
 
 }
+
+@media screen and (max-width: 768px) {
+    .research-header-heading .research-title {
+        padding: 20px 50px;
+    }
+}

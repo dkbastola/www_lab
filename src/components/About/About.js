@@ -8,7 +8,7 @@ export default function About() {
     <div className="about">
       <div className="about-img-section">
         <img
-          src="/images/bastola.jpeg"
+          src="/img/kiran/DRB_Mountain.jpg"
           className="about-img"
           alt="Dr. Bastola"
         />

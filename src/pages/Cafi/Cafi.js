@@ -97,15 +97,15 @@ export default function Cafi() {
           navigation={true}
           pagination
           spaceBetween={0}
-          slidesPerView={3}
+          slidesPerView={2}
           breakpoints={{
             1600: {
               slidesPerView: 3,
             },
-            1440: {
+            1024: {
               slidesPerView: 2,
             },
-            1024: {
+            375: {
               slidesPerView: 1,
             },
           }}

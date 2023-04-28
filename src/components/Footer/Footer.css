@@ -32,3 +32,43 @@
 .footer-img-section img {
     width: 50%;
 }
+
+.footer-nav-listitem .footer-firstlink {
+    border-left: 1px solid #f2f2f2d3;
+}
+
+@media screen and (max-width: 600px) {
+    .footer .footer-nav-section .footer-nav-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    .footer-nav-listitem {
+        justify-self: end;
+    }
+
+    .footer-nav-listitem .footer-firstlink {
+        border-left: none;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .footer .footer-nav-section .footer-nav-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .footer-nav-listitem {
+        justify-self: end;
+    }
+
+    .footer-nav-listitem .footer-firstlink {
+        border-left: none;
+    }
+
+
+}

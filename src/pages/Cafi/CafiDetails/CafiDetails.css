@@ -10,3 +10,9 @@
 .cafi-detail-typo {
     padding: 20px 0;
 }
+
+.cafi-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Typography, Avatar } from "@mui/material";
 import React from "react";
 import { useParams } from "react-router-dom";
 import cafi from "../../../data/cafi";
@@ -22,7 +22,9 @@ export default function CafiDetails() {
         style={{ padding: "20px 0" }}
         variant="subtitle1"
       >
-        By Kiran Bastola
+        <div className="cafi-author">
+          <Avatar alt="Kiran Bastola" src="/images/avatar.png" /> Kiran Bastola
+        </div>
       </Typography>
       <div className="cafi-detail-img-section">
         <img

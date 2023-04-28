@@ -17,3 +17,13 @@
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
 }
+
+@media screen and (max-width: 768px) {
+
+    .hero-text-section {
+        width: 70%;
+    }
+    .hero-text-section .hero-title {
+        font-size: 1.25em;
+    }
+}

@@ -118,3 +118,16 @@
 .cafi-link:hover {
     filter: brightness(80%);
 }
+
+@media screen and (max-width: 768px) {
+    .cafi-image img {
+        width: 425px;
+    }
+    .cafi-list-section .cafi-list-desc {
+        padding: 20px 10%;
+    }
+
+    .cafi-header-heading .cafi-title {
+        padding: 20px 50px;
+    }
+}
