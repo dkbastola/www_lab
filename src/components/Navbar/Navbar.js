@@ -25,7 +25,7 @@ export default function Navbar() {
   const [state, setState] = React.useState({
     right: false,
   });
-  const match = useMediaQuery("(max-width: 768px)");
+  const match = useMediaQuery("(max-width: 1024px)");
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (

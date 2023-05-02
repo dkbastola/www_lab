@@ -16,3 +16,28 @@
     align-items: center;
     gap: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    .cafi-detail-section {
+        padding: 3% 10%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cafi-detail-section h4 {
+        font-size: 1.35em;
+    }
+    .cafi-detail-section h6 {
+        font-size: 0.85em;
+    }
+
+    .cafi-detail-img {
+        height: 50vh;
+    }
+
+    .cafi-detail-section p {
+        font-size: 0.95em;
+    }
+
+
+}

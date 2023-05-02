@@ -82,8 +82,41 @@
     text-decoration: underline;
 }
 
+@media screen and (max-width: 1024px) {
+    .teaching-list {
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px 30px;
+        }
+}
+
 @media screen and (max-width: 768px) {
     .teaching-header-heading .teaching-title {
         padding: 20px 50px;
     }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .teaching-header-heading {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .teaching-header-heading {
+        height: 50vh;
+    }
+
+    .teaching-header-heading .teaching-title {
+        transform: translate(-50%, -80%);
+
+    }
+
+    .teaching-listitem .teaching-paper {
+        height: auto;
+    }
+
 }

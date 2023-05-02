@@ -37,3 +37,20 @@
         padding: 20px 50px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .members-header-heading {
+        height: 60vh;
+    }
+}
+@media screen and (max-width: 500px) {
+    .members-header-heading {
+        height: 50vh;
+    }
+
+    .members-header-heading .members-title {
+        transform: translate(-50%, -80%);
+
+    }
+}
+
