@@ -92,10 +92,17 @@
 @media screen and (max-width: 500px) {
     .about {
         padding: 50px 10px;
+        display: grid;
     }
 
     .about-img {
         width: 200px;
+        
+    }
+
+    .about .about-img-section {
+        justify-content: center;
+        text-align: center;
     }
 
     .about .about-img-section,
