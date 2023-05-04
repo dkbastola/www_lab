@@ -5,6 +5,7 @@ import {
   Button,
   CardMedia,
   Typography,
+  useMediaQuery,
 } from "@mui/material";
 
 import React from "react";
@@ -20,6 +21,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 SwiperCore.use([Navigation, Pagination, Mousewheel]);
 
 export default function Cafi() {
+  const match = useMediaQuery("(max-width: 500px)");
+
   const params = {
     slidesPerView: 3,
     spaceBetween: 30,
@@ -119,7 +122,7 @@ export default function Cafi() {
                     justifyContent: "space-between",
                     flexDirection: "column",
                   }}
-                  sx={{ maxWidth: 500, height: 520 }}
+                  sx={{ maxWidth: 500, height: match ? 610 : 520 }}
                 >
                   <Link className="cafi-link" to={`/cafi/${img.id}`}>
                     <CardMedia
