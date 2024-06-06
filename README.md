@@ -1,3 +1,7 @@
+# Installation
+conda install nodejs
+npm install --legacy-peer-deps 
+npm install -g firebase-tools
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
