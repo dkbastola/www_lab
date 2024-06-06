@@ -37,9 +37,7 @@ export default function Cafi() {
         <div className="cafi-header-heading">
           <div className="cafi-title">
             <h1>CAFI Projects</h1>
-            <p>
-              Introducing CAFI: A Collaborative Solution to Tackle Food
-              Injustice
+            <p> Introducing CAFI: The Collaborative for Addressing Food Injustice
             </p>
           </div>
         </div>
